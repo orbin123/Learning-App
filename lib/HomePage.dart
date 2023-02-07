@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/body.dart';
 
+import 'package:flutter_application_1/components/API_Body.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -12,9 +14,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
-      body: Body(),
-    );
+        appBar: buildAppBar(),
+        body: Column(
+          children: [
+            Body(),
+            ApiBody(),
+          ],
+        ));
   }
 
   AppBar buildAppBar() {

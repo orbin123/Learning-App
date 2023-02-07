@@ -69,8 +69,13 @@ class Body extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: Container(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
-              Text("Hello, Priya!"),
+              Text("Hello, Priya!",
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  )),
               Text("What do you wanna learn today?")
             ],
           ),
